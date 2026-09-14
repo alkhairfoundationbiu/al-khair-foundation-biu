@@ -3,17 +3,318 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>AL-KHAIR FOUNDATION BIU</title>
+
+  <meta name="description" content="AL-KHAIR FOUNDATION BIU – Taimako, Jinƙai, Ilimi da Alheri.">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; width: 100%; background-color: #000; display: flex; justify-content: center; align-items: center; }
-    .poster { max-width: 100%; max-height: 100vh; display: flex; justify-content: center; align-items: center; }
-    .poster img { max-width: 100%; max-height: 100vh; object-fit: contain; display: block; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7f5;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b5d3b;
+      color: white;
+      padding: 18px 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #f1d36b;
+    }
+
+    nav {
+      margin-top: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 7px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f1d36b;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b5d3b, #087a4d);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #f1d36b;
+      color: #123;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 18px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0b5d3b;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .about {
+      background: white;
+      text-align: center;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px 18px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #0b5d3b;
+      margin-bottom: 10px;
+    }
+
+    .poster-box {
+      text-align: center;
+    }
+
+    .poster-box img {
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .contact {
+      background: #0b5d3b;
+      color: white;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #f1d36b;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #063b27;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #f1d36b;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 12px;
+        margin: 0 4px;
+      }
+
+      .hero {
+        padding: 50px 15px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section h2 {
+        font-size: 24px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="poster">
-    <img src="al-khair-poster.png" alt="AL-KHAIR FOUNDATION BIU POSTER">
-  </div>
+
+  <header>
+    <h1>AL-KHAIR FOUNDATION BIU</h1>
+    <p>Taimako • Jinƙai • Ilimi • Alheri</p>
+
+    <nav>
+      <a href="#home">Gida</a>
+      <a href="#about">Game da Mu</a>
+      <a href="#services">Ayyuka</a>
+      <a href="#poster">Poster</a>
+      <a href="#contact">Tuntuɓe Mu</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Barka da Zuwa AL-KHAIR FOUNDATION BIU</h2>
+
+    <p>
+      Muna ƙarfafa taimako, jinƙai, ilimi da ayyukan alheri
+      domin amfanin al'umma.
+    </p>
+
+    <a href="#about" class="button">Ƙara Koyo</a>
+  </section>
+
+  <section id="about">
+    <h2>Game da Mu</h2>
+
+    <div class="about">
+      <p>
+        <strong>AL-KHAIR FOUNDATION BIU</strong> kungiya ce mai
+        mayar da hankali kan taimako, jinƙai, ilimi da ayyukan alheri.
+      </p>
+
+      <p style="margin-top:15px;">
+        Manufarmu ita ce ƙarfafa taimakon juna da samar da kyakkyawan
+        tasiri a cikin al'umma.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Abubuwan da Muke Mayar da Hankali a Kai</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Taimakon Al'umma</h3>
+        <p>
+          Tallafawa mutane masu buƙata da ƙarfafa taimakon juna.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ilimi</h3>
+        <p>
+          Ƙarfafa ilimi da ayyukan da ke taimakawa wajen samun ilimi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Jinƙai</h3>
+        <p>
+          Ƙarfafa tausayi, kulawa da taimakon masu buƙata.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ayyukan Alheri</h3>
+        <p>
+          Shirya da tallafawa ayyukan alheri masu amfani ga al'umma.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="poster">
+    <h2>Official Poster</h2>
+
+    <div class="poster-box">
+      <img
+        src="al-khair-poster.png"
+        alt="AL-KHAIR FOUNDATION BIU Official Poster"
+      >
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Tuntuɓe Mu</h2>
+
+      <p>
+        Domin ƙarin bayani ko hulɗa da AL-KHAIR FOUNDATION BIU,
+        za a iya amfani da hanyoyin sadarwar da aka bayar a
+        official poster ɗinmu.
+      </p>
+
+      <p><strong>📍 Biu, Borno State, Nigeria</strong></p>
+
+      <a href="#poster" class="button">Duba Poster</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 <span>AL-KHAIR FOUNDATION BIU</span>
+    </p>
+
+    <p>
+      Taimako • Jinƙai • Ilimi • Alheri
+    </p>
+  </footer>
+
 </body>
 </html>
